@@ -18,6 +18,10 @@ public static class DependencyInjection
         services.AddScoped<IJwtService, JwtService>();
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<ICustomerRepository, CustomerRepository>();
+        services.AddScoped<ILeadRepository, LeadRepository>();
+        services.AddScoped<IContactRepository, ContactRepository>();
+        services.AddScoped<IAccountRepository, AccountRepository>();
+        services.AddScoped<IOpportunityRepository, OpportunityRepository>();
         services.AddScoped<IPasswordHasher, PasswordHasher>();
 
         return services;

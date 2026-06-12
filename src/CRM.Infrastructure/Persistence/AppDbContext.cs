@@ -13,6 +13,10 @@ public class AppDbContext : DbContext
     public DbSet<UserRole> UserRoles => Set<UserRole>();
     public DbSet<RolePermission> RolePermissions => Set<RolePermission>();
     public DbSet<Customer> Customers => Set<Customer>();
+    public DbSet<Lead> Leads => Set<Lead>();
+    public DbSet<Contact> Contacts => Set<Contact>();
+    public DbSet<Account> Accounts => Set<Account>();
+    public DbSet<Opportunity> Opportunities => Set<Opportunity>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

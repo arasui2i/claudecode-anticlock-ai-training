@@ -10,8 +10,12 @@ import {
   Typography,
 } from '@mui/material';
 import {
+  AccountBalanceOutlined,
+  ContactsOutlined,
   DashboardOutlined,
   HelpOutlineOutlined,
+  LeaderboardOutlined,
+  MonetizationOnOutlined,
   PeopleOutlined,
   SettingsOutlined,
 } from '@mui/icons-material';
@@ -20,8 +24,12 @@ import { useLocation, useNavigate } from 'react-router-dom';
 export const SIDEBAR_WIDTH = 240;
 
 const mainNav = [
-  { label: 'Dashboard', icon: <DashboardOutlined />, path: '/' },
-  { label: 'Customers', icon: <PeopleOutlined />, path: '/customers' },
+  { label: 'Dashboard',  icon: <DashboardOutlined />,  path: '/' },
+  { label: 'Customers',  icon: <PeopleOutlined />,      path: '/customers' },
+  { label: 'Leads',      icon: <LeaderboardOutlined />, path: '/leads' },
+  { label: 'Contacts',   icon: <ContactsOutlined />,       path: '/contacts' },
+  { label: 'Accounts',      icon: <AccountBalanceOutlined />,  path: '/accounts' },
+  { label: 'Opportunities', icon: <MonetizationOnOutlined />, path: '/opportunities' },
 ];
 
 const secondaryNav = [
