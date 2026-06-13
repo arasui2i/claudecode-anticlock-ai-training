@@ -11,6 +11,8 @@ import {
 } from '@mui/material';
 import {
   AccountBalanceOutlined,
+  AssignmentOutlined,
+  ConfirmationNumberOutlined,
   ContactsOutlined,
   DashboardOutlined,
   HelpOutlineOutlined,
@@ -30,6 +32,8 @@ const mainNav = [
   { label: 'Contacts',   icon: <ContactsOutlined />,       path: '/contacts' },
   { label: 'Accounts',      icon: <AccountBalanceOutlined />,  path: '/accounts' },
   { label: 'Opportunities', icon: <MonetizationOnOutlined />, path: '/opportunities' },
+  { label: 'Activities',    icon: <AssignmentOutlined />,          path: '/activities' },
+  { label: 'Tickets',       icon: <ConfirmationNumberOutlined />,  path: '/tickets' },
 ];
 
 const secondaryNav = [

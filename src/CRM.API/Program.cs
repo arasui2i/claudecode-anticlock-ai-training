@@ -63,6 +63,16 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("opportunities.create", p => p.AddRequirements(new PermissionRequirement("opportunities.create")));
     options.AddPolicy("opportunities.edit",   p => p.AddRequirements(new PermissionRequirement("opportunities.edit")));
     options.AddPolicy("opportunities.delete", p => p.AddRequirements(new PermissionRequirement("opportunities.delete")));
+
+    options.AddPolicy("activities.view",   p => p.AddRequirements(new PermissionRequirement("activities.view")));
+    options.AddPolicy("activities.create", p => p.AddRequirements(new PermissionRequirement("activities.create")));
+    options.AddPolicy("activities.edit",   p => p.AddRequirements(new PermissionRequirement("activities.edit")));
+    options.AddPolicy("activities.delete", p => p.AddRequirements(new PermissionRequirement("activities.delete")));
+
+    options.AddPolicy("tickets.view",   p => p.AddRequirements(new PermissionRequirement("tickets.view")));
+    options.AddPolicy("tickets.create", p => p.AddRequirements(new PermissionRequirement("tickets.create")));
+    options.AddPolicy("tickets.edit",   p => p.AddRequirements(new PermissionRequirement("tickets.edit")));
+    options.AddPolicy("tickets.delete", p => p.AddRequirements(new PermissionRequirement("tickets.delete")));
 });
 
 builder.Services.AddCors(options =>

@@ -15,6 +15,10 @@ import AccountListPage from './pages/Accounts/AccountListPage';
 import AccountFormPage from './pages/Accounts/AccountFormPage';
 import OpportunityListPage from './pages/Opportunities/OpportunityListPage';
 import OpportunityFormPage from './pages/Opportunities/OpportunityFormPage';
+import ActivityListPage from './pages/Activities/ActivityListPage';
+import ActivityFormPage from './pages/Activities/ActivityFormPage';
+import TicketListPage from './pages/Tickets/TicketListPage';
+import TicketFormPage from './pages/Tickets/TicketFormPage';
 
 const queryClient = new QueryClient();
 
@@ -49,6 +53,14 @@ export default function App() {
             <Route path="/opportunities" element={<OpportunityListPage />} />
             <Route path="/opportunities/new" element={<OpportunityFormPage />} />
             <Route path="/opportunities/:id/edit" element={<OpportunityFormPage />} />
+
+            <Route path="/activities" element={<ActivityListPage />} />
+            <Route path="/activities/new" element={<ActivityFormPage />} />
+            <Route path="/activities/:id/edit" element={<ActivityFormPage />} />
+
+            <Route path="/tickets" element={<TicketListPage />} />
+            <Route path="/tickets/new" element={<TicketFormPage />} />
+            <Route path="/tickets/:id/edit" element={<TicketFormPage />} />
           </Route>
 
           {/* Default redirect */}
